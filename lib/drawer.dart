@@ -1,3 +1,4 @@
+import 'package:demo_drawer/constants.dart';
 import 'package:flutter/material.dart';
 
 class MyDrawer extends StatelessWidget {
@@ -11,11 +12,11 @@ class MyDrawer extends StatelessWidget {
       backgroundColor: Colors.white,
       child: ListView(
         children: [
+          //header
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 10),
+            padding: const EdgeInsets.symmetric(vertical: 10),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: const [
                 //header
                 CircleAvatar(
@@ -46,6 +47,41 @@ class MyDrawer extends StatelessWidget {
               ],
             ),
           ),
+          //body
+          Column(
+            children: [
+              ListTile(
+                leading: const Icon(Icons.folder, color: Colors.black),
+                title: const Text('My Files', style: kTitleTextstyle),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: const Icon(Icons.group, color: Colors.black),
+                title: const Text('Shared with me', style: kTitleTextstyle),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: const Icon(Icons.star, color: Colors.black),
+                title: const Text('Starred', style: kTitleTextstyle),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: const Icon(Icons.timelapse, color: Colors.black),
+                title: const Text('Recent', style: kTitleTextstyle),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: const Icon(Icons.upload, color: Colors.black),
+                title: const Text('Recent', style: kTitleTextstyle),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: const Icon(Icons.delete, color: Colors.black),
+                title: const Text('Trash', style: kTitleTextstyle),
+                onTap: () {},
+              ),
+            ],
+          )
         ],
       ),
     );
