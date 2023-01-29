@@ -14,7 +14,7 @@ class MyDrawer extends StatelessWidget {
         children: [
           //header
           Container(
-            padding: const EdgeInsets.symmetric(vertical: 10),
+            padding: const EdgeInsets.symmetric(vertical: 15),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: const [
@@ -32,21 +32,23 @@ class MyDrawer extends StatelessWidget {
                 Text(
                   "Sandra Adarns",
                   style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold),
+                    color: Colors.black,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 Text(
                   "sandra_a8787@gamil.com",
                   style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w500),
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
-                SizedBox(height: 10)
               ],
             ),
           ),
+
           //body
           Column(
             children: [
